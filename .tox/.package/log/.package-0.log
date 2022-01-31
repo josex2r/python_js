@@ -1,0 +1,14 @@
+action: .package, msg: getenv
+cwd: /Users/joseluis.represa/workspace/python/python_js/.tox
+cmd: /Users/joseluis.represa/.local/share/virtualenvs/python_js-DiG59E8E/bin/python -m pipenv --python /Users/joseluis.represa/.local/share/virtualenvs/python_js-DiG59E8E/bin/python
+Creating a virtualenv for this project...
+Pipfile: /Users/joseluis.represa/workspace/python/python_js/.tox/.package/Pipfile
+Using /Users/joseluis.represa/.local/share/virtualenvs/python_js-DiG59E8E/bin/python (3.10.2) to create virtualenv...
+⠋ Creating virtual environment...⠙ Creating virtual environment...⠹ Creating virtual environment...⠸ Creating virtual environment...⠼ Creating virtual environment...⠴ Creating virtual environment...⠦ Creating virtual environment...⠧ Creating virtual environment...⠇ Creating virtual environment...created virtual environment CPython3.10.2.final.0-64 in 370ms
+  creator CPython3Posix(dest=/Users/joseluis.represa/workspace/python/python_js/.tox/.package/.venv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/Users/joseluis.represa/Library/Application Support/virtualenv)
+    added seed packages: pip==21.3.1, setuptools==60.2.0, wheel==0.37.1
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+✔ Successfully created virtual environment! 
+Virtualenv location: /Users/joseluis.represa/workspace/python/python_js/.tox/.package/.venv

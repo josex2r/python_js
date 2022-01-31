@@ -18,7 +18,7 @@ class Callback(Protocol[T_contra, K_co]):
     ) -> K_co: ...
 
 
-def js_map(array: Iterable[T], func: Callback[T, K]) -> List[K]:
+def map(array: Iterable[T], func: Callback[T, K]) -> List[K]:
     """
     Returns a new array with the results of calling func on each element.
     """
