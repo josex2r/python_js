@@ -1,3 +1,0 @@
-action: .package, msg: get-build-requires
-cwd: /Users/joseluis.represa/workspace/python/python_js
-cmd: /Users/joseluis.represa/workspace/python/python_js/.tox/.package/bin/python /Users/joseluis.represa/.local/share/virtualenvs/python_js-DiG59E8E/lib/python3.10/site-packages/tox/helper/build_requires.py setuptools.build_meta '' ''

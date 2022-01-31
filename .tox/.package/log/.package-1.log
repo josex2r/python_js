@@ -1,17 +1,0 @@
-action: .package, msg: getenv
-cwd: /Users/joseluis.represa/workspace/python/python_js/.tox
-cmd: /Users/joseluis.represa/.local/share/virtualenvs/python_js-DiG59E8E/bin/python -m pipenv install --dev 'setuptools >= 35.0.2' 'setuptools_scm >= 2.0.0, <3'
-Installing setuptools >= 35.0.2...
-⠋ Installing...⠙ Installing setuptools...⠹ Installing setuptools...⠸ Installing setuptools...⠼ Installing setuptools...⠴ Installing setuptools...⠦ Installing setuptools...⠧ Installing setuptools...⠇ Installing setuptools...⠏ Installing setuptools...⠋ Installing setuptools...⠙ Installing setuptools...⠹ Installing setuptools...⠸ Installing setuptools...⠼ Installing setuptools...⠴ Installing setuptools...⠦ Installing setuptools...⠧ Installing setuptools...⠇ Installing setuptools...⠏ Installing setuptools...⠋ Installing setuptools...⠙ Installing setuptools...⠹ Installing setuptools...⠸ Installing setuptools...⠼ Installing setuptools...⠴ Installing setuptools...⠦ Installing setuptools...⠧ Installing setuptools...⠇ Installing setuptools...⠏ Installing setuptools...⠋ Installing setuptools...⠙ Installing setuptools...Adding setuptools to Pipfile's [dev-packages]...
-✔ Installation Succeeded 
-Installing setuptools_scm >= 2.0.0, <3...
-⠋ Installing...⠙ Installing setuptools_scm...⠹ Installing setuptools_scm...⠸ Installing setuptools_scm...⠼ Installing setuptools_scm...⠴ Installing setuptools_scm...⠦ Installing setuptools_scm...⠧ Installing setuptools_scm...⠇ Installing setuptools_scm...⠏ Installing setuptools_scm...⠋ Installing setuptools_scm...⠙ Installing setuptools_scm...⠹ Installing setuptools_scm...⠸ Installing setuptools_scm...⠼ Installing setuptools_scm...Adding setuptools_scm to Pipfile's [dev-packages]...
-⠴ Installing setuptools_scm...✔ Installation Succeeded 
-Pipfile.lock not found, creating...
-Locking [dev-packages] dependencies...
-⠋ Locking...Building requirements...
-Resolving dependencies...
-⠙ Locking...⠹ Locking...⠸ Locking...⠼ Locking...⠴ Locking...⠦ Locking...⠧ Locking...⠇ Locking...⠏ Locking...⠋ Locking...⠙ Locking...⠹ Locking...⠸ Locking...⠼ Locking...⠴ Locking...⠦ Locking...⠧ Locking...⠇ Locking...⠏ Locking...⠋ Locking...⠙ Locking...⠹ Locking...⠸ Locking...⠼ Locking...⠴ Locking...⠦ Locking...⠧ Locking...⠇ Locking...⠏ Locking...⠋ Locking...⠙ Locking...⠹ Locking...⠸ Locking...⠼ Locking...⠴ Locking...⠦ Locking...⠧ Locking...⠇ Locking...⠏ Locking...⠋ Locking...⠙ Locking...⠹ Locking...⠸ Locking...⠼ Locking...⠴ Locking...⠦ Locking...⠧ Locking...⠇ Locking...⠏ Locking...⠋ Locking...⠙ Locking...⠹ Locking...⠸ Locking...✔ Success! 
-Locking [packages] dependencies...
-Updated Pipfile.lock (205470)!
-Installing dependencies from Pipfile.lock (205470)...
