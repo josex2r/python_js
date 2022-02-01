@@ -13,6 +13,12 @@ tox = "*"
 tox-pipenv = "*"
 pydocstyle = "*"
 pycodestyle = "*"
+twine = "*"
+mypy = "*"
 
 [requires]
 python_version = "3.10"
+
+[scripts]
+publish = "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
+test = "tox"
