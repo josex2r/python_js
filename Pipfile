@@ -21,5 +21,7 @@ python-semantic-release = "*"
 python_version = "3.10"
 
 [scripts]
-publish = "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
-test = "tox"
+publish = "semantic-release publish"
+publish_raw = "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
+regression = "tox"
+test = "python -m pytest tests"

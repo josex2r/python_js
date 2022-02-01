@@ -9,7 +9,6 @@ setuptools.setup(
     author="Jose Luis Represa",
     author_email="jlrepresa@gmail.com",
     description="Some JS functions written in Python for learning purposes",
-    long_description=open('DESCRIPTION.rst').read(),
     packages=setuptools.find_packages(),
     install_requires=[],
     classifiers=[
