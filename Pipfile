@@ -8,9 +8,11 @@ name = "pypi"
 [dev-packages]
 pytest = "*"
 setuptools = ">=35.0.2"
-setuptools_scm = ">=2.0.0"
+setuptools_scm = ">= 2.0.0, <3"
 tox = "*"
 tox-pipenv = "*"
+pydocstyle = "*"
+pycodestyle = "*"
 
 [requires]
 python_version = "3.10"
