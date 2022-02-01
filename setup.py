@@ -1,8 +1,10 @@
 import setuptools
 
+__version__ = "0.1.0"
+
 setuptools.setup(
     name="python_js",
-    version="0.1.0",
+    version=__version__,
     url="https://github.com/josex2r/python_js",
     author="Jose Luis Represa",
     author_email="jlrepresa@gmail.com",
