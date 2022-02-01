@@ -1,0 +1,3 @@
+include CHANGES.rst
+include tox.ini
+include python_js/py.typed
