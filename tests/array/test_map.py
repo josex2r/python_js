@@ -28,15 +28,3 @@ def test_input_argument_iterable() -> None:
     assert formatted_seasons_and_numbers == [
         'Winter (0)', 'Summer (1)', 'Fall (2)', 'Spring (3)', '1 (4)', '2 (5)'
     ]
-
-
-def test_input_argument_array() -> None:
-    format_str: Callable[[str, int],
-                         str] = lambda value, index: f"{value} ({index})"
-
-    formatted_seasons_and_numbers = map(Array(seasons_and_numbers), format_str)
-
-    # Then
-    assert formatted_seasons_and_numbers == [
-        'Winter (0)', 'Summer (1)', 'Fall (2)', 'Spring (3)', '1 (4)', '2 (5)'
-    ]

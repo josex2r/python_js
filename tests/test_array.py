@@ -14,6 +14,26 @@ def test_constructor() -> None:
     assert Array(seasons_and_numbers) == seasons_and_numbers
 
 
+def test_filter() -> None:
+    array = Array(seasons_and_numbers)
+    result = array.filter(lambda x, i: isinstance(x, str))
+
+    # Then
+    assert result == ["Winter", "Summer", "Fall", "Spring"]
+
+
+def test_filter_chainable() -> None:
+    array = Array(seasons_and_numbers)
+    result: List[str] = array.filter(
+        lambda x, i: isinstance(x, str)
+    ).filter(
+        lambda x, i: x.startswith('W')
+    )
+
+    # Then
+    assert result == ["Winter"]
+
+
 def test_map() -> None:
     array = Array(seasons_and_numbers)
     result = array.map(lambda x, i: f"{x} ({i})")
@@ -35,21 +55,9 @@ def test_map_chainable() -> None:
     ]
 
 
-def test_filter() -> None:
+def test_reduce() -> None:
     array = Array(seasons_and_numbers)
-    result = array.filter(lambda x, i: isinstance(x, str))
+    result = array.reduce(lambda prev, next, index: f"{prev}, {next}")
 
     # Then
-    assert result == ["Winter", "Summer", "Fall", "Spring"]
-
-
-def test_filter_chainable() -> None:
-    array = Array(seasons_and_numbers)
-    result: List[str] = array.filter(
-        lambda x, i: isinstance(x, str)
-    ).filter(
-        lambda x, i: x.startswith('W')
-    )
-
-    # Then
-    assert result == ["Winter"]
+    assert result == 'None, Winter, Summer, Fall, Spring, 1, 2'
