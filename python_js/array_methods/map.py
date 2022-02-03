@@ -1,38 +1,11 @@
 from __future__ import annotations
-from typing import Iterable, Protocol, TypeVar, List  # Protocol
+from typing import Iterable, TypeVar, List, Callable
 
-# P = ParamSpec('P')
-T = TypeVar('T', contravariant=True)
+T = TypeVar('T')
 K = TypeVar('K')
 
-T_contra = TypeVar('T_contra', contravariant=True)
-K_co = TypeVar('K_co', covariant=True)
 
-
-class Callback(Protocol[T_contra, K_co]):
-    """Definition of a callback function protocol."""
-
-    def __call__(
-        self,
-        value: T_contra,
-        index: int,
-    ) -> K_co:
-        """
-        Definition of a callback function.
-
-        Args:
-        ----
-            value: An element of the iterable.
-            index: The index of the element.
-
-        """
-        pass
-
-
-CallbackType = Callback[T, K]
-
-
-def map(iterable: Iterable[T], func: CallbackType) -> List[K]:
+def map(iterable: Iterable[T], func: Callable[[T, int], K]) -> List[K]:
     """
     Return a new array with the results of calling func on each element.
 
