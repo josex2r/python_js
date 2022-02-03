@@ -1,6 +1,5 @@
 from __future__ import annotations
-
-from typing import Iterable, List, Protocol, TypeVar  # Protocol
+from typing import Iterable, Protocol, TypeVar, List  # Protocol
 
 # P = ParamSpec('P')
 T = TypeVar('T', contravariant=True)
@@ -30,7 +29,10 @@ class Callback(Protocol[T_contra, K_co]):
         pass
 
 
-def map(iterable: Iterable[T], func: Callback[T, K]) -> List[K]:
+CallbackType = Callback[T, K]
+
+
+def map(iterable: Iterable[T], func: CallbackType) -> List[K]:
     """
     Return a new array with the results of calling func on each element.
 
