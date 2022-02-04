@@ -6,4 +6,6 @@ This is not production safe and it's made for learning purposes.
 
 from .array import Array
 
-__author__ = 'Jose Luis Represa'
+__all__ = [
+    "Array",
+]

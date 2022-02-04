@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from typing import Callable, Dict, List
 
-from python_js.array import Array
 from python_js.array_methods.reduce import reduce
 
 seasons: List[str] = ['Winter', 'Summer', 'Fall', 'Spring']

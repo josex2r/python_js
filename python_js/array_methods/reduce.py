@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import Iterable, TypeVar, List, Callable, Union, Any
+from typing import Iterable, TypeVar, Callable, Any
 
 T = TypeVar('T')
 K = TypeVar('K')

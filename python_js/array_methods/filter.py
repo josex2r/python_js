@@ -20,4 +20,6 @@ def filter(iterable: Iterable[T], func: Callable[[T, int], bool]) -> List[Any]:
         filter([1, 2, 3], lambda x: x > 2) # [3]
 
     """
-    return [value for index, value in enumerate(iterable) if func(value, index)]
+    return [
+        value for index, value in enumerate(iterable) if func(value, index)
+    ]

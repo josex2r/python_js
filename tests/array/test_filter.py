@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from typing import Callable, List
 
-from python_js.array import Array
 from python_js.array_methods.filter import filter
 
 seasons: List[str] = ['Winter', 'Summer', 'Fall', 'Spring']

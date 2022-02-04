@@ -51,7 +51,12 @@ def test_map_chainable() -> None:
 
     # Then
     assert result == [
-        '(0) Winter (0)', '(1) Summer (1)', '(2) Fall (2)', '(3) Spring (3)', '(4) 1 (4)', '(5) 2 (5)'
+        '(0) Winter (0)',
+        '(1) Summer (1)',
+        '(2) Fall (2)',
+        '(3) Spring (3)',
+        '(4) 1 (4)',
+        '(5) 2 (5)'
     ]
 
 
