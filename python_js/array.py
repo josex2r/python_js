@@ -3,13 +3,16 @@ from __future__ import annotations
 
 from typing import List, TypeVar, Callable, Any
 
-from .array_methods import filter, map, reduce
+from .array_methods import concat, filter, map, reduce
 
 T = TypeVar("T")
 K = TypeVar("K")
 
 
 class Array(List[T]):
+    def concat(self, *args: List[Any]) -> Array[Any]:
+        return Array(concat(self, *args))
+
     def filter(self, func: Callable[[T, int], bool]) -> Array[Any]:
         return Array(filter(self, func))
 

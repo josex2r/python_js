@@ -14,6 +14,22 @@ def test_constructor() -> None:
     assert Array(seasons_and_numbers) == seasons_and_numbers
 
 
+def test_concat() -> None:
+    array = Array(seasons)
+    result = array.concat(numbers)
+
+    # Then
+    assert result == seasons_and_numbers
+
+
+def test_concat_chainable() -> None:
+    array = Array(seasons)
+    result: List[str | int] = array.concat(numbers).concat(numbers)
+
+    # Then
+    assert result == [*seasons_and_numbers, *numbers]
+
+
 def test_filter() -> None:
     array = Array(seasons_and_numbers)
     result = array.filter(lambda x, i: isinstance(x, str))
